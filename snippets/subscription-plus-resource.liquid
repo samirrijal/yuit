@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	if (typeof window.subscriptionPlusApp === 'undefined') {
+		window.subscriptionPlusApp = {};
+	}
+	window.subscriptionPlusApp.proxy_url = 'apps/subscription-plus';
+	window.subscriptionPlusApp.api_url = '/' + window.subscriptionPlusApp.proxy_url + '/api';
+	window.subscriptionPlusApp.customerID = {{ customer.id | json }};
+	window.subscriptionPlusApp.products = {};
+	window.subscriptionPlusApp.money_format = '{{ shop.money_format }}';
+	window.subscriptionPlusApp.currency = {{ shop.currency | json }} ;
+	window.subscriptionPlusApp.agree_language = 'I agree to';
+	window.subscriptionPlusApp.term_language = 'Terms and Conditions';
+	window.subscriptionPlusApp.app_status = '1';
+</script>
+
+{% if template.name == 'product' or template.name == 'collection' or template.name == 'index' %}  {% endif %}
+
+
+<div data-subscription-plus-wrapper style='display:none' data-time='05/11/2023'></div>
