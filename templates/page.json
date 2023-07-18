@@ -1,1 +1,125 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "580cbefb-d2ab-430f-96e4-0634d0c5d688": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n    .powder-selection {\n        padding: 1rem;\n        display: flex;\n        flex-direction: column;\n        gap: 1rem;\n    }\n\n    .powder-selection h2 {\n        font-size: 2rem;\n        font-weight: 560;\n    }\n\n    .product-selection-container {\n        border: 1px solid #ddd;\n        border-radius: 1rem;\n    }\n\n    .product-selection {\n        display: flex;\n        align-items: center;\n        flex-direction: row;\n        justify-content: space-between;\n        font-size: 1.2rem;\n        height: auto;\n    }\n\n    .product-selection:not(:last-child) {\n        border-bottom: 1px solid #ddd;\n    }\n\n    .disabled {\n        padding: 1rem 1.5rem;\n        width: 100%;\n        text-align: center;\n        background: #ccc;\n        border-radius: .5rem;\n        color: #777;\n        font-weight: 500;\n        cursor: not-allowed;\n        margin-top: 2rem;\n        transition: .3s ease-in-out;\n        font-weight: 600;\n        letter-spacing: 1px;\n    }\n\n    .enabled {\n        padding: 1rem 1.5rem;\n        width: 100%;\n        text-align: center;\n        background: #35bd5a;\n        border-radius: .5rem;\n        color: #fff;\n        font-weight: 500;\n        cursor: pointer;\n        margin-top: 2rem;\n        transition: .3s ease-in-out;\n        font-weight: 600;\n        letter-spacing: 1px;\n    }\n\n    .enabled:hover {\n        background: #b8cb2e;\n    }\n\n    .button-container,\n    .number-container {\n        width: 100%;\n        height: 100%;\n    }\n\n    .decrement-button-container,\n    .number-container {\n        display: none;\n    }\n\n    button.increment,\n    button.decrement,\n    .button-value {\n        font-size: 2rem;\n        height: 100%;\n        padding: 0 2rem;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    }\n\n    button.increment,\n    .button-value {\n        border-left: 1px solid #ddd;\n    }\n\n    .quantity-controls {\n        display: flex;\n        flex-direction: row;\n        align-items: center;\n        justify-content: center;\n        height: 100%;\n    }\n\n    input[type=\"number\"] {\n        background: none;\n        text-align: center;\n        font-size: 1.65rem;\n    }\n\n    .product-title-container {\n        padding: 1rem;\n    }\n\n    .product-title-container h3 {\n        font-weight: 600;\n    }\n\n    .product-title-container p {\n        font-size: 1rem;\n    }\n\n    .main-title-container {\n        display: flex;\n        flex-direction: row;\n        align-items: center;\n        gap: .5rem;\n    }\n\n    .gluten-free-text {\n        font-weight: 600;\n        color: #666;\n        font-size: 1rem;\n    }\n\n    .flex-container {\n        display: flex;\n        flex-direction: row;\n        gap: 3rem;\n    }\n\n    @media screen and (max-width: 970px) {\n        .flex-container {\n            flex-direction: column;\n        }\n\n        .product-selection {\n            flex-direction: column;\n        }\n    }\n\n    .left-container,\n    .right-container {\n        flex: 1;\n    }\n\n    .left-container h1 {\n        font-size: 3rem;\n        font-weight: 600;\n    }\n\n    .pack-description {\n        padding: 1rem 0;\n    }\n\n    .tag-container {\n        display: flex;\n        align-items: center;\n        flex-direction: row;\n        gap: .5rem;\n    }\n\n    .tag {\n        font-weight: 600;\n        font-size: .9rem;\n        color: #b8cb2e;\n    }\n\n    .star-svg,\n    .gluten-free-svg {\n        height: 1.1rem;\n        width: 1.1rem;\n    }\n\n    .gluten-free-svg {\n        fill: #666;\n    }\n\n    .discounted-price {\n        color: #b8cb2e;\n        font-size: 3rem;\n        font-weight: 700;\n    }\n\n    .total-price {\n        color: #999;\n        font-size: 2rem;\n        font-weight: 700;\n        text-decoration: line-through;\n    }\n\n    .flavours-container {\n        width: 100%;\n        display: flex;\n        flex-direction: row;\n        justify-content: space-between;\n        align-items: center;\n    }\n\n    .flavours-title {\n        color: #aaa;\n        font-weight: 700;\n        font-size: 1.25rem;\n    }\n\n    .flavours-subtitle {\n        color: #aaa;\n        font-size: 1.1rem;\n    }\n\n    .bundle-link-anchor {\n        text-decoration: none;\n        cursor: pointer;\n    }\n\n    .bundle-link-container:hover {\n        background: #9eb01a;\n    }\n\n    .bundle-link-container {\n        display: flex;\n        align-items: center;\n        justify-content: space-between;\n        background: #b8cb2e;\n        padding: 2rem;\n        border-radius: 1.5rem;\n        transition: .3s ease-in-out;\n    }\n\n    .link-text-container {\n        color: #fff;\n    }\n\n    .link-text-container h3 {\n        font-weight: 600;\n        font-size: 1.3rem;\n    }\n\n    .link-text-container h4 {\n        font-size: 1.1rem;\n    }\n\n    .chevron-svg {\n        height: 1.5rem;\n        width: 1.5rem;\n    }\n\n    .meal-price-section {\n        display: none;\n        align-items: center;\n        justify-content: space-between;\n    }\n\n    .price-container {\n        display: flex;\n        flex-direction: column;\n        gap: .5rem;\n    }\n\n    .price-section {\n        display: flex;\n        align-items: center;\n        gap: 2rem;\n    }\n\n    .free-delivery-text {\n        font-weight: 600;\n    }\n\n    .ration-price {\n        font-weight: 600;\n        font-size: 1.3rem;\n    }\n<\/style>\n<div class=\"flex-container\">\n    <div class=\"left-container\">\n        <h1>Yuit Black Edition<\/h1>\n        <p class=\"pack-description\">Yuit Black Edition is a high-protein, nutritionally complete meal. Every 400-calorie\n            serving contains all 26 essential vitamins and minerals, fats, fibre, and phytonutrients, but with 50% less\n            carbs and 33% more protein than Yuit Powder.\n        <\/p>\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0753\/8101\/4803\/files\/yuit-banner.jpg\">\n    <\/div>\n    <div class=\"right-container\">\n        <a href=\"#\" class=\"bundle-link-anchor\">\n            <div class=\"bundle-link-container\">\n                <div class=\"link-text-container\">\n                    <h3>Build your own bundle<\/h3>\n                    <h4>You can now mix and match from a choice of all products.<\/h4>\n                <\/div>\n                <div class=\"link-icon-container\">\n                    <svg viewBox=\"0 0 320 512\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" class=\"chevron-svg\">\n                        <path\n                            d=\"M285.476 272.971 91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z\"\n                            fill=\"#ffffff\" class=\"fill-000000\"><\/path>\n                    <\/svg>\n                <\/div>\n            <\/div>\n        <\/a>\n        <div class=\"powder-selection\">\n            <h2>Select at least 3 powders:<\/h2>\n            <div class=\"flavours-container\">\n                <span class=\"flavours-title\">Flavours<\/span>\n                <span class=\"flavours-subtitle\">Each bag contains 17 meals<\/span>\n            <\/div>\n            {% assign product_form_id = 'product-form-' | append: product.id | append: '-' | append: section.id %}\n            <form action=\"{{ routes.cart_url }}\" id=\"{{ product_form_id }}\" data-productid=\"{{ product.id }}\"\n            method=\"POST\" class=\"shopify-product-form\" enctype=\"multipart\/form-data\" >\n                <div class=\"product-selection-container\">\n                    {% for product in collections.all.products %}\n                    {% if product.tags contains 'powder' %}\n                        <div class=\"product-selection product\">\n                            <div class=\"product-title-container\">\n                                {% if product.tags contains 'Most popular' %}\n                                <div class=\"tag-container\">\n                                    <svg class=\"star-svg\" baseProfile=\"tiny\" version=\"1.2\" viewBox=\"0 0 24 24\"\n                                        xml:space=\"preserve\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n                                        <path\n                                            d=\"m9.362 9.158-5.268.584c-.19.023-.358.15-.421.343s0 .394.14.521c1.566 1.429 3.919 3.569 3.919 3.569-.002 0-.646 3.113-1.074 5.19a.496.496 0 0 0 .734.534c1.844-1.048 4.606-2.624 4.606-2.624l4.604 2.625c.168.092.378.09.541-.029a.5.5 0 0 0 .195-.505l-1.071-5.191 3.919-3.566a.499.499 0 0 0-.28-.865c-2.108-.236-5.269-.586-5.269-.586l-2.183-4.83a.499.499 0 0 0-.909 0l-2.183 4.83z\"\n                                            fill=\"#b8cb2e\" class=\"fill-000000\"><\/path>\n                                    <\/svg><span class=\"tag\">Most Popular<\/span>\n                                <\/div>\n                                {% elsif product.tags contains 'Our Favourite' %}\n                                <div class=\"tag-container\">\n                                    <svg class=\"star-svg\" baseProfile=\"tiny\" version=\"1.2\" viewBox=\"0 0 24 24\"\n                                        xml:space=\"preserve\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n                                        <path\n                                            d=\"m9.362 9.158-5.268.584c-.19.023-.358.15-.421.343s0 .394.14.521c1.566 1.429 3.919 3.569 3.919 3.569-.002 0-.646 3.113-1.074 5.19a.496.496 0 0 0 .734.534c1.844-1.048 4.606-2.624 4.606-2.624l4.604 2.625c.168.092.378.09.541-.029a.5.5 0 0 0 .195-.505l-1.071-5.191 3.919-3.566a.499.499 0 0 0-.28-.865c-2.108-.236-5.269-.586-5.269-.586l-2.183-4.83a.499.499 0 0 0-.909 0l-2.183 4.83z\"\n                                            fill=\"#b8cb2e\" class=\"fill-000000\"><\/path>\n                                    <\/svg>\n                                    <span class=\"tag\">Our Favourite<\/span>\n                                <\/div>\n                                {% endif %}\n                                <div class=\"main-title-container\">\n                                    <h3>{{ product.title }}<\/h3>\n                                    <svg id=\"glutenIcon\" class=\"gluten-free-svg\" data-name=\"Gluten Icon\"\n                                        xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 36 36\">\n                                        <path class=\"cls-1\"\n                                            d=\"M11.6,16.6l3.6-.2a3.5,3.5,0,0,1,2.7,1.4L19,19.4l-3.6.2a3.5,3.5,0,0,1-2.7-1.4l-1.1-1.6Zm7.8-5.3-1.6,3.3a3.5,3.5,0,0,0,.4,3.1l1.1,1.5L20.8,16a3.5,3.5,0,0,0-.4-3.1l-1-1.6Zm-5.4,9h3.9a3.7,3.7,0,0,1,2.9,1.7l1.1,1.8H18a4,4,0,0,1-2.9-1.7L14,20.3Zm8.6-5.4-1.8,3.5a3.5,3.5,0,0,0,.2,3.3l1.1,1.8L23.9,20a3.5,3.5,0,0,0-.2-3.3l-1.1-1.8ZM26.1,19l-2,3.7a3.6,3.6,0,0,0,.2,3.6l1.1,1.9,2-3.7a3.6,3.6,0,0,0-.2-3.6L26.1,19Zm-9.4,5.6h4.2a4.2,4.2,0,0,1,3.1,2l1.1,1.9H20.9a4.2,4.2,0,0,1-3.1-1.9l-1.1-1.9ZM16.4,8l-1.3,3a2.8,2.8,0,0,0,.4,2.8l1,1.5,1.3-3.1a2.9,2.9,0,0,0-.4-2.8L16.4,8Zm-7,5.1,3.3-.4A3.2,3.2,0,0,1,15.3,14l1,1.4-3.3.3a2.9,2.9,0,0,1-2.5-1.2L9.4,13.1Zm5.1-.4h0l-.7-3.3a3.3,3.3,0,0,0-2-2l-1.6-.6V8.6a3.1,3.1,0,0,0,1.4,2.5l2.9,1.6ZM18,0A18,18,0,1,0,36,18,18.1,18.1,0,0,0,18,0Zm0,34a15.9,15.9,0,0,1-8.4-2.4l6-8.5a6.6,6.6,0,0,1-1.2-1.7L8,30.5A16,16,0,0,1,18,2a15.9,15.9,0,0,1,8.4,2.4l-5.7,8.1a5.6,5.6,0,0,1,.4,1.2,5,5,0,0,1,.2,1.2h.1L28,5.5A16,16,0,0,1,18,34Z\">\n                                        <\/path>\n                                    <\/svg>\n\n                                    <h4 class=\"gluten-free-text\">Gluten-free<\/h4>\n                                <\/div>\n                                <p>{{ product.description }}<\/p>\n                            <\/div>\n                            <div class=\"quantity-controls\">\n                                <div class=\"button-container decrement-button-container\">\n                                    <button type=\"button\" class=\"decrement\" data-product-id=\"{{ product.id }}\">-<\/button>\n                                <\/div>\n                                <div class=\"number-container\">\n                                    <input type=\"number\" class=\"button-value\" name=\"quantity[{{ product.id }}]\" value=\"0\"\n                                        min=\"0\" max=\"3\" readonly>\n                                <\/div>\n                                <div class=\"button-container increment-button-container\">\n                                    <button type=\"button\" class=\"increment\" data-product-id=\"{{ product.id }}\">+<\/button>\n                                <\/div>\n                            <\/div>\n                        <\/div>\n                    {% endif %}\n                    {% endfor %}\n                <\/div>\n                <div class=\"meal-price-section\">\n                    <div class=\"price-container\">\n                        <div class=\"price-section\">\n                            <span class=\"discounted-price\"><\/span>\n                            <span class=\"total-price\"><\/span>\n                        <\/div>\n                        <p class=\"free-delivery-text\">\n                            Including FREE delivery\n                        <\/p>\n                    <\/div>\n                    <div class=\"meal-container\">\n                        <p class=\"ration-meal\"><span class=\"bag-count\">3<\/span> \/ <span class=\"meal-count\">51<\/span><\/p>\n                        <p class=\"ration-price\"><span class=\"price-per-meal\">1.88<\/span>€ per meal<\/p>\n                    <\/div>\n                <\/div>\n                <input type=\"submit\" disabled class=\"disabled\" value=\"MINIMUM 3 BAGS\" id=\"subscribeButton\">\n            <\/form>\n        <\/div>\n    <\/div>\n<\/div>\n<script>\n    document.addEventListener('DOMContentLoaded', function () {\n        const productSelections = document.querySelectorAll('.product-selection');\n        const quantityInputs = document.querySelectorAll('.product-selection input[type=\"number\"]');\n        const totalPrice = document.querySelector('.total-price');\n        const discountedPrice = document.querySelector('.discounted-price');\n        const submitBtn = document.querySelector('.powder-selection input[type=\"submit\"]');\n        const incrementButtons = document.querySelectorAll('.increment');\n        const bagSpan = document.querySelector('.bag-count');\n        const mealsSpan = document.querySelector('.meal-count');\n        const mealCostSpan = document.querySelector('.price-per-meal');\n        let totalPriceValue = 0;\n\n        productSelections.forEach((selection, index) => {\n            const decrementContainer = selection.querySelector('.decrement-button-container');\n            const incrementButton = incrementButtons[index];\n            const quantityInput = quantityInputs[index];\n            const numberContainer = selection.querySelector('.number-container');\n\n            incrementButton.addEventListener('click', () => {\n                const currentQuantity = parseInt(quantityInput.value);\n                const newQuantity = currentQuantity + 1;\n\n                quantityInput.value = newQuantity;\n                numberContainer.style.display = 'block';\n                decrementContainer.style.display = 'block';\n\n                updateTotalPrice();\n                updateCounts();\n                checkSubmitButtonState();\n            });\n\n            decrementContainer.addEventListener('click', () => {\n                updateQuantity(quantityInput, -1, numberContainer, decrementContainer);\n                updateTotalPrice();\n                updateCounts();\n                checkSubmitButtonState();\n            });\n\n            quantityInput.addEventListener('input', () => {\n                updateTotalPrice();\n                updateCounts();\n                checkSubmitButtonState();\n            });\n        });\n\n        function updateQuantity(input, change, numberContainer, decrementContainer) {\n            const currentQuantity = parseInt(input.value);\n            const newQuantity = currentQuantity + change;\n\n            if (newQuantity >= 0) {\n                input.value = newQuantity;\n                updateTotalPrice();\n                updateCounts();\n\n                if (newQuantity === 0) {\n                    numberContainer.style.display = 'none';\n                    decrementContainer.style.display = 'none';\n                }\n            }\n        }\n\n        function updateTotalPrice() {\n            const prices = [10, 15, 20, 25]; \/\/ Replace with the actual prices for each product\n            const quantities = Array.from(quantityInputs).map(input => parseInt(input.value));\n            totalPriceValue = prices.reduce((total, price, index) => total + price * quantities[index], 0);\n            const discountedPriceValue = totalPriceValue * 0.85;\n\n            if (getTotalSelectedQuantity() >= 3) {\n                document.querySelector('.meal-price-section').style.display = 'flex';\n                submitBtn.classList.add('enabled');\n            } else {\n                document.querySelector('.meal-price-section').style.display = 'none';\n                submitBtn.classList.remove('enabled');\n            }\n\n            discountedPrice.textContent = `${discountedPriceValue.toFixed(2)}€`;\n            totalPrice.textContent = `${totalPriceValue.toFixed(2)}€`;\n        }\n\n        function getTotalSelectedQuantity() {\n            const selectedQuantities = Array.from(quantityInputs).map(input => parseInt(input.value));\n            const totalQuantity = selectedQuantities.reduce((total, quantity) => total + quantity, 0);\n\n            return totalQuantity;\n        }\n\n        function checkSubmitButtonState() {\n            if (getTotalSelectedQuantity() >= 3) {\n                submitBtn.disabled = false;\n                submitBtn.value = \"SUBSCRIBE | EVERY 4 WEEKS\";\n            } else {\n                submitBtn.disabled = true;\n                submitBtn.value = \"MINIMUM 3 BAGS\";\n            }\n        }\n\n        function updateCounts() {\n            let totalBags = 0;\n            let totalMeals = 0;\n            let mealCost = 0;\n\n            quantityInputs.forEach(input => {\n                const quantity = parseInt(input.value);\n\n                if (!isNaN(quantity)) {\n                    totalBags += quantity;\n                    totalMeals += quantity * 17; \/\/ Assuming each bag contains 17 meals\n                }\n            });\n\n            quantityInputs.forEach(input => {\n                if (totalMeals > 0) {\n                    mealCost = 1.88;  \/\/ (*IMPORTANT*) to change to make the price per meal dynamic\n                }\n            });\n\n\n            bagSpan.textContent = totalBags + ' bag' + (totalBags !== 1 ? 's' : '');\n            mealsSpan.textContent = totalMeals + ' meal' + (totalMeals !== 1 ? 's' : '');\n            mealCostSpan.textContent = `${mealCost.toFixed(2)}`;\n        }\n    });\n\n<\/script>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "dee905e5-338c-41ee-aff3-b9a89d2ec7a8": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-1": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-2": {
+          "type": "badges",
+          "settings": {
+          }
+        },
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-3": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-4": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-5": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-6": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-7": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-8": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-9": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-10": {
+          "type": "pickup_availability",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-1",
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-2",
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-3",
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-4",
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-5",
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-6",
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-7",
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-8",
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-9",
+        "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-10"
+      ],
+      "settings": {
+        "full_width": true,
+        "product": "pack",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "580cbefb-d2ab-430f-96e4-0634d0c5d688",
+    "dee905e5-338c-41ee-aff3-b9a89d2ec7a8"
+  ]
+}
