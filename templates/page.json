@@ -7,7 +7,6 @@
     },
     "580cbefb-d2ab-430f-96e4-0634d0c5d688": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -20,6 +19,7 @@
     },
     "dee905e5-338c-41ee-aff3-b9a89d2ec7a8": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "template--19627257069843__dee905e5-338c-41ee-aff3-b9a89d2ec7a8-16896953325ddefb98-1": {
           "type": "title",
